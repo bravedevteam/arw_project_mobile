@@ -26,9 +26,25 @@ select::-ms-expand {display: none;}
 
 /* LAYOUT */
 #wrapper {width: 100%;}
-#container {position: relative; width: 100%; overflow:hidden;}
+#container {position: relative; width: 100%;}
 .inner { position:relative; }
 .inner:after { content:''; clear:both; display:block; }
+
+
+/* Download */
+.boxDownload { display:flex; position:relative; background:#4f0dc8; flex-direction:column; justify-content: center; z-index:2; }
+.boxDownload .titDownload { margin-bottom:10px; color:#2bcbda; font-weight:700; font-size:20px; letter-spacing:-.025em; line-height:21px; }
+.boxDownload .download_filebox { width:144px; height:30px; position:relative; }
+.boxDownload .download_filebox:after { content:''; clear:both; display:block; }
+.boxDownload .download_filebox .download_lang { width:114px; height:30px; float:left; position:relative; background:#fff; padding:0 10px; font-size:11px; line-height:30px; }
+.boxDownload .download_filebox .download_lang:after { content:''; width:8px; height:5px; position:absolute; right:10px; top:50%; margin-top:-2px; background:url('../images/iconArrow.png') center center no-repeat; background-size:8px auto; transition:all .2s ease-out; z-index:2; }
+.boxDownload .download_filebox.active .download_lang:after { transform:rotate(180deg); }
+.boxDownload .download_filebox .listDownload { width:114px; height:0; position:absolute; left:0; top:0; background:#fff; transition:all .2s ease-out; overflow:hidden; z-index:1; }
+.boxDownload .download_filebox.active .listDownload { height:65px;}
+.boxDownload .download_filebox .listDownload li { line-height:30px; }
+.boxDownload .download_filebox .listDownload li+li { margin-top:5px; }
+.boxDownload .download_filebox .listDownload li a { padding:0 10px; display:block; font-size:11px; }
+.boxDownload .download_filebox .btnDownload { width:30px; height:30px; float:left; background:url('../images/iconDownBig.png') center center no-repeat #2bcbda; background-size:15px auto; font-size:0; text-indent:-9999px; }
 
 
 /* Header */
@@ -36,15 +52,15 @@ select::-ms-expand {display: none;}
 #header .logo { width:116px; height:100%; position:absolute; left:0; top:0; background:url('../images/logo.png') center center no-repeat; background-size:88px auto; font-size:0; text-indent:-99999px; }
 #header .btnMenu { width:47px; height:100%; position:absolute; right:0; top:0; background:url('../images/btnMenu.png') center center no-repeat; background-size:17px auto; font-size:0; text-indent:-99999px; }
 
-#menu { width:225px; height:100%; position:fixed; right:-100%; top:0; background:#fff; z-index:11; transition:right .5s ease-out; }
+#menu { width:225px; position:fixed; right:-100%; top:0; background:#fff; z-index:11; transition:right .5s ease-out; }
 #menu.active { right:0; }
 #menu .gnb { padding:95px 25px 0; }
 #menu .gnb li+li { margin-top:20px; }
 #menu .gnb a { height:30px; display:inline-block; font-size:16px; font-weight:500; }
 #menu .gnb a.active { border-bottom:2px solid #4f0dc8; font-weight:700; color:#4f0dc8;}
-#menu .menu_sub { width:100%; position:absolute; left:0; bottom:68px; padding:50px 0 30px 25px; background:url('../images/iconMenu.png') 25px 0 no-repeat; background-size:36px auto; font-size:10px; line-height:16px; font-weight:400; font-family:"Poppins", 'Noto Sans KR'; }
-#menu .btnAppLink { width:100%; height:68px; position:absolute; left:0; bottom:0; display:block; background:#4f0dc8; color:#fff; line-height:68px; font-size:13px; font-weight:700; text-align:center; }
-#menu .btnAppLink img { width:11px; display:inline-block; margin:-2px 0 0 14px; }
+#menu .menu_sub { margin-top:47px; padding:50px 0 30px 25px; background:url('../images/iconMenu.png') 25px 0 no-repeat; background-size:36px auto; font-size:10px; line-height:16px; font-weight:400; font-family:"Poppins", 'Noto Sans KR'; }
+#menu .boxDownload { height:108px;  align-items:center; }
+#menu .boxDownload .titDownload { font-size:13px; line-height:20px; color:#fff; }
 #menu .btnClose { width:35px; height:35px; position:absolute; right:10px; top:10px; background:url('../images/btnClose.png') center center no-repeat; background-size:16px auto; font-size:0; text-indent:-99999px; }
 
 #dim { display:none; position:fixed; left:0; top:0; right:0; bottom:0; background:rgba(0, 0, 0, 0.7); z-index:10; }
@@ -169,8 +185,7 @@ select::-ms-expand {display: none;}
 #contact .boxContact:after { content:''; width:112px; height:126px; position:absolute; right:15px; top:65px; background:url('../images/symbolContact2.png') no-repeat; background-size:112px auto; z-index:1; }
 #contact h6 { position:relative; font-size:20px; letter-spacing:-.025em; font-weight:700; color:#fff; z-index:2; }
 #contact p { position:relative; font-size:11px; letter-spacing:-.025em; line-height:1.5; color:#fff; font-family:"Poppins", "Noto Sans KR"; z-index:2; }
-#contact .btnAppLink { width:80%; height:120px; display:flex; position:absolute; right:0; bottom:0; padding:0 11px 0 16.5%; border-top-left-radius:58px; border-bottom-left-radius:58px; background:#4f0dc8; color:#2bcbda; font-weight:700; font-size:20px; letter-spacing:-.025em; line-height:21px; align-items:center; z-index:2; }
-#contact .btnAppLink img { width:18px; height:14px; margin-left:20px; }
+#contact .boxDownload { width:80%; height:120px; position:absolute; right:0; bottom:0; padding:0 11px 0 16.5%; border-top-left-radius:58px; border-bottom-left-radius:58px; }
 
 
 /* Footer */
