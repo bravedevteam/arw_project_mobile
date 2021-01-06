@@ -32,19 +32,13 @@ select::-ms-expand {display: none;}
 
 
 /* Download */
-.boxDownload { display:flex; position:relative; background:#4f0dc8; flex-direction:column; justify-content: center; z-index:2; }
-.boxDownload .titDownload { margin-bottom:10px; color:#2bcbda; font-weight:700; font-size:20px; letter-spacing:-.025em; line-height:21px; }
-.boxDownload .download_filebox { width:144px; height:30px; position:relative; }
-.boxDownload .download_filebox:after { content:''; clear:both; display:block; }
-.boxDownload .download_filebox .download_lang { width:114px; height:30px; float:left; position:relative; background:#fff; padding:0 10px; font-size:11px; line-height:30px; }
-.boxDownload .download_filebox .download_lang:after { content:''; width:8px; height:5px; position:absolute; right:10px; top:50%; margin-top:-2px; background:url('../images/iconArrow.png') center center no-repeat; background-size:8px auto; transition:all .2s ease-out; z-index:2; }
-.boxDownload .download_filebox.active .download_lang:after { transform:rotate(180deg); }
-.boxDownload .download_filebox .listDownload { width:114px; height:0; position:absolute; left:0; top:0; background:#fff; transition:all .2s ease-out; overflow:hidden; z-index:1; }
-.boxDownload .download_filebox.active .listDownload { height:65px;}
-.boxDownload .download_filebox .listDownload li { line-height:30px; }
-.boxDownload .download_filebox .listDownload li+li { margin-top:5px; }
-.boxDownload .download_filebox .listDownload li a { padding:0 10px; display:block; font-size:11px; }
-.boxDownload .download_filebox .btnDownload { width:30px; height:30px; float:left; background:url('../images/iconDownBig.png') center center no-repeat #2bcbda; background-size:15px auto; font-size:0; text-indent:-9999px; }
+.boxDownload { height:108px; display:flex; position:relative; background:#4f0dc8; flex-direction:column; justify-content: center; align-items:center; z-index:2; }
+.boxDownload .titDownload { margin-bottom:10px; font-size:13px; color:#fff; font-weight:700; letter-spacing:-.025em; line-height:21px; }
+.boxDownload .listDownload { overflow:hidden; }
+.boxDownload .listDownload li { float:left; }
+.boxDownload .listDownload li+li { margin-left:5px; }
+.boxDownload .listDownload li a { width:69px; height:30px; display:block; border-radius:14px; background:#41dcea; color:#fff; font-size:12px; line-height:30px; text-align:center; }
+.boxDownload .listDownload li a:after { content:''; width:8px; height:10px; margin-left:5px; display:inline-block; background:url('../images/iconDown.png') no-repeat; background-size:8px auto; }
 
 
 /* Header */
@@ -59,8 +53,6 @@ select::-ms-expand {display: none;}
 #menu .gnb a { height:30px; display:inline-block; font-size:16px; font-weight:500; }
 #menu .gnb a.active { border-bottom:2px solid #4f0dc8; font-weight:700; color:#4f0dc8;}
 #menu .menu_sub { margin-top:47px; padding:50px 0 30px 25px; background:url('../images/iconMenu.png') 25px 0 no-repeat; background-size:36px auto; font-size:10px; line-height:16px; font-weight:400; font-family:"Poppins", 'Noto Sans KR'; }
-#menu .boxDownload { height:108px;  align-items:center; }
-#menu .boxDownload .titDownload { font-size:13px; line-height:20px; color:#fff; }
 #menu .btnClose { width:35px; height:35px; position:absolute; right:10px; top:10px; background:url('../images/btnClose.png') center center no-repeat; background-size:16px auto; font-size:0; text-indent:-99999px; }
 
 #dim { display:none; position:fixed; left:0; top:0; right:0; bottom:0; background:rgba(0, 0, 0, 0.7); z-index:10; }
@@ -98,8 +90,8 @@ select::-ms-expand {display: none;}
 #visual .boxFramework ul li .subject { font-size:20px; line-height:28px; color:#fff; }
 
 /* section_mission */
-#mission { padding:55px 15px 30px; text-align:center; }
-#mission .secTitle { margin-bottom:25px; }
+#mission { padding:55px 0 30px; text-align:center; }
+#mission .secTitle { padding:0 15px; margin-bottom:25px; }
 #mission .secTitle:after { content:''; clear:both; display:block; }
 
 
@@ -140,13 +132,13 @@ select::-ms-expand {display: none;}
 #programmable .secTabIMG .img { position:relative; z-index:2; }
 
 /* section_business */
-#business { padding:50px 0 26px; background:#f4f6f8; text-align:center; }
+#business { padding:50px 0; background:#f4f6f8; text-align:center; }
 #business .secTitle h3 { margin-bottom:10px; line-height:30px; }
 #business .secTitle .subject span { font-size:15px; display:inline-block; font-weight:600; }
 #business .secTitle p { margin-bottom:30px; }
 
 /* section_useflow */
-#useflow { padding:50px 0 53px; text-align:center; }
+#useflow { padding:50px 0 64px; text-align:center; }
 #useflow .secTitle { margin-bottom:20px; }
 #useflow .secTitle .subject { font-family:"Poppins"; font-weight:600; }
 
@@ -179,15 +171,15 @@ select::-ms-expand {display: none;}
 
 /* section_contact */
 #contact { position:relative; }
-#contact .inner { padding-bottom:85px; }
+#contact .inner { padding-bottom:110px; }
 #contact .boxContact { height:174px; position:relative; padding:48px 0 0 42px; background:#2bcbda; }
 #contact .boxContact:before { content:''; width:126px; height:134px; position:absolute; left:25px; top:0; background:url('../images/symbolContact1.png') no-repeat; background-size:126px auto; z-index:1; }
 #contact .boxContact:after { content:''; width:112px; height:126px; position:absolute; right:15px; top:65px; background:url('../images/symbolContact2.png') no-repeat; background-size:112px auto; z-index:1; }
 #contact h6 { position:relative; font-size:20px; letter-spacing:-.025em; font-weight:700; color:#fff; z-index:2; }
 #contact p { position:relative; font-size:11px; letter-spacing:-.025em; line-height:1.5; color:#fff; font-family:"Poppins", "Noto Sans KR"; z-index:2; }
-#contact .boxDownload { width:80%; height:120px; position:absolute; right:0; bottom:0; padding:0 11px 0 16.5%; border-top-left-radius:58px; border-bottom-left-radius:58px; }
+#contact .boxDownload { width:80%; height:145px; position:absolute; right:0; bottom:0; padding:0 11px 0 0; border-top-left-radius:70px; border-bottom-left-radius:70px; }
+#contact .boxDownload .titDownload { font-size:20px; color:#2bcbda; text-align:center; }
 
 
 /* Footer */
-#footer { height:45px; text-align:center; font-size:10px; }
-#footer .copyright { margin-top:14px; }
+#footer { height:56px; padding-top:20px; text-align:center; font-size:10px; }
