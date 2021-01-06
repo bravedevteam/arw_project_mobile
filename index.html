@@ -536,8 +536,8 @@
 				$(this).addClass("active");
 			}
 
-			_parent.find(".secTabCont").removeClass("active");
-			_parent.find(".secIMG_cont").removeClass("active");
+			$(this).parents(".section").find(".secTabCont").removeClass("active");
+			$(this).parents(".section").find(".secIMG_cont").removeClass("active");
 			$("#"+tab).addClass("active");
 			$("#"+tab+"_img").addClass("active");
 		});
