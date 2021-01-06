@@ -77,8 +77,8 @@ select::-ms-expand {display: none;}
 /* section_visaul */
 #visual { position:relative; padding-top:50px; }
 #visual .boxVisual { padding:35px 0; text-align:center; }
-#visual .boxVisual h2 { margin-bottom:16px; font-size:30px; line-height:38px; }
-#visual .boxVisual p { font-size:15px; line-height:23px; font-family:"Noto Sans KR"; }
+#visual .boxVisual h2 { margin-bottom:16px; font-size:30px; line-height:38px; letter-spacing:-.025em; }
+#visual .boxVisual p { font-size:15px; line-height:23px; font-family:"Noto Sans KR"; font-weight:300; }
 #visual .boxFramework { padding:50px 15px 54px; background:#4f0dc8; border-top-left-radius:40px; border-top-right-radius:40px; text-align:center; }
 #visual .boxFramework h4 { font-size:25px; font-weight:600; color:#fff; line-height:1; }
 #visual .boxFramework p { display:block; margin-bottom:30px; font-size:15px; font-weight:500; color:#fff; }
