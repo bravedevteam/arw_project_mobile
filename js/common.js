@@ -1,10 +1,20 @@
 $(document).ready(function(){
-	// 헤더 스크롤 이벤트
-	// window.onscroll = function(){
-	// 	if($(document).scrollTop() > 1){
-	// 		$("#header").addClass("scroll");
-	// 	}else{
-	// 		$("#header").removeClass("scroll");
-	// 	}
- //    }
+	$(".btnDownload").click(function(e){
+		e.preventDefault();
+
+		$("#popWhitepaper").fadeIn(300);
+		$("#dim").fadeIn(300);
+	});
+
+	$("#dim").click(function(){
+		$(".boxPopup").fadeOut(300);
+		$(this).fadeOut(300);
+	});
+
+	$(".boxPopup .close").click(function(e){
+		e.preventDefault();
+		
+		$(this).parent().fadeOut(300);
+		$("#dim").fadeOut(300);
+	});
 });
