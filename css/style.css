@@ -30,7 +30,6 @@ select::-ms-expand {display: none;}
 .inner { position:relative; }
 .inner:after { content:''; clear:both; display:block; }
 
-
 /* Download */
 .boxDownload { height:108px; display:flex; position:relative; background:#4f0dc8; flex-direction:column; justify-content: center; align-items:center; z-index:2; }
 .boxDownload .titDownload { margin-bottom:10px; font-size:13px; color:#fff; font-weight:700; letter-spacing:-.025em; line-height:21px; }
@@ -81,9 +80,9 @@ select::-ms-expand {display: none;}
 
 /* section_visaul */
 #visual { position:relative; padding-top:50px; }
-#visual .boxVisual { padding:35px 0; text-align:center; }
+#visual .boxVisual { padding:35px 0 20px; text-align:center; }
 #visual .boxVisual h2 { margin-bottom:16px; font-size:25px; line-height:38px; letter-spacing:-.025em; }
-#visual .boxVisual p { font-size:15px; line-height:23px; font-family:"Noto Sans KR"; font-weight:300; }
+#visual .boxVisual p { margin-bottom:20px; font-size:15px; line-height:23px; font-family:"Noto Sans KR"; font-weight:300; }
 #visual .boxFramework { padding:50px 15px 54px; background:#4f0dc8; border-top-left-radius:40px; border-top-right-radius:40px; text-align:center; }
 #visual .boxFramework h4 { font-size:25px; font-weight:600; color:#fff; line-height:1; }
 #visual .boxFramework p { display:block; margin-bottom:30px; font-size:15px; font-weight:500; color:#fff; }
@@ -195,8 +194,8 @@ select::-ms-expand {display: none;}
 
 
 /* Footer */
-#footer { height:67px; padding-top:22px; background:#6b6b6b; text-align:center; }
-#footer p { color:rgba(255,255,255,.5); font-size:10px; }
+#footer { height:110px; padding-top:20px; background:#6b6b6b; text-align:center; }
+#footer p { margin-bottom:18px; color:rgba(255,255,255,.5); font-size:10px; }
 
 
 .boxPopup { width:225px; height:110px; display:none; padding:22px 0; position:fixed; left:50%; top:50%; background:#4f0dc8; transform:translate(-50%, -50%); color:#fff; text-align:center; z-index:11; }
@@ -205,3 +204,8 @@ select::-ms-expand {display: none;}
 .boxPopup a.link+a.link { margin-left:5px; }
 .boxPopup a.link:after { content:''; width:8px; height:10px; margin-left:4px; display:inline-block; background:url('../images/iconDown.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
 .boxPopup a.close { width:26px; height:26px; position:absolute; right:0; top:0; background:url('../images/btnClose.png') center center no-repeat; background-size:16px auto; font-size:0; text-indent:-99999px; }
+
+.btn a { width:116px; height:30px; display:inline-block; background-size:16px auto; background-repeat:no-repeat; background-position:6px center; line-height:30px; vertical-align:middle; font-size:10px; font-weight:700; text-align:left; }
+.btn a+a { margin-left:12px; }
+.btnLinkMedium { padding-left:28px; background-image:url('../images/iconMedium.png'); background-color:#292a2c; color:#fff; }
+.btnLinkKakao { padding-left:24px; background-image:url('../images/iconKakao.png'); background-color:#fae300; color:#000; }
