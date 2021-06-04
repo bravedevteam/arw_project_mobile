@@ -50,7 +50,7 @@
 						<a href="https://open.kakao.com/o/gkqgVr1c" target="_blank" class="btnLinkKakao"><span class="langType kor">카카오톡 바로가기</span><span class="langType eng">Kakao Talk</span></a>
 					</div>
 				</div>
-				<div class="boxFramework" data-aos="fade-up">
+				<div class="boxFramework langType kor" data-aos="fade-up">
 					<h4>Arowana Gold Jewelry Platform Ecosystem</h4>
 					<div class="img"><img src="./images/imgFramework.png" alt="framework" /></div>
 				</div>
@@ -549,6 +549,8 @@
 				$(this).parent().removeClass("active");
 				$(this).parent().prepend(target);
 				$(this).addClass("selected").siblings().removeClass("selected");
+
+				AOS.refresh();
 			}else{
 				$(this).parent().addClass("active");
 			}
