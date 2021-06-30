@@ -17,6 +17,10 @@ $(document).ready(function(){
 		$(this).parent().fadeOut(300);
 		dim_close();
 	});
+
+	$(".basicPopup .close").click(function(){
+		dim_close();
+	});
 	
 	function dim_open(){
 		$("body").css("overflow", "hidden");
